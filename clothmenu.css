@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f5f8;
+    font-family: Sans-Serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.menu{
+    padding: 5rem 0;
+}
+.title{
+    text-align: center;
+}
+.underline{
+    background-color: rgb(100,92, 255);
+    width: 7rem;
+    height: 0.25rem;
+    margin: auto;
+}
+.h2{
+    font-size: 2rem;
+}
+.btn-container{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.btn{
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0.37rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgb (100, 92, 255);
+    transition: 0.3s ease-in-out all;
+    color: rgb(100,92,255);
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgb(100, 92, 255);
+    color: white;
+}
+.img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+.item-container{
+  width: 95vw;  
+  margin: auto;
+  max-width: 1120px;
+  display: grid;
+  justify-items: center;
+  gap: 3rem 2rem;
+}
+.menu-item{
+    display: grid;
+    gap: 1rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted gray;
+}
+.price{
+    color: rgb(100,92,255);
+}
+p{
+    color: gray;
+}
+@media screen and (min-width: 768px)
+{
+    .menu-item{
+    grid-template-columns: 225px 1fr;
+    gap: 1.25rem;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    .item-container{
+    grid-template-columns: 1fr 1fr;
+    }
+    .menu-item{
+    grid-template-columns: 1fr;
+    }
+    .img{
+    height: 150px; width: 250px;
+    }
+}
+
+.cart{
+    position: center;
+    display: block;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    gap: 1rem;
+    font-size: 20;
+    font-weight: bold;
+}
+.cart:hover {
+    opacity: 0.7;
+}
+.banner{
+    background-image: url("banner.jpg");
+    width: 100%;
+    height: 30px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+.logo{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    margin:auto;
+}
